@@ -1,17 +1,5 @@
 package square
 
-// import "fmt"
-
-// func main() {
-// 	po := Point{x: 10, y: 5}
-// 	sq := Square{
-// 		start: po,
-// 		a:     2,
-// 	}
-// 	fmt.Println(sq)
-// 	fmt.Println(sq.End())
-// }
-
 type Point struct {
 	x, y int
 }
