@@ -22,7 +22,7 @@ type Square struct {
 }
 
 func (s *Square) End() Point {
-	newPoint := Point{s.start.x + int(s.a), s.start.y - int(s.a)}
+	newPoint := Point{s.start.x + int(s.a), s.start.y + int(s.a)}
 	s.start = newPoint
 	return s.start
 }
