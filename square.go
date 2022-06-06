@@ -1,5 +1,17 @@
 package square
 
+// import "fmt"
+
+// func main() {
+// 	po := Point{x: 10, y: 5}
+// 	sq := Square{
+// 		start: po,
+// 		a:     2,
+// 	}
+// 	fmt.Println(sq)
+// 	fmt.Println(sq.End())
+// }
+
 type Point struct {
 	x, y int
 }
@@ -10,8 +22,8 @@ type Square struct {
 }
 
 func (s *Square) End() Point {
-	s.start.x = s.start.x + int(s.a)
-	s.start.y = s.start.y - int(s.a)
+	newPoint := Point{s.start.x + int(s.a), s.start.y - int(s.a)}
+	s.start = newPoint
 	return s.start
 }
 
